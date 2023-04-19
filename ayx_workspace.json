@@ -1,6 +1,6 @@
 {
-    "name": "gpt-categorizer",
-    "tool_category": "Evolved",
+    "name": "Alteryx-GPT",
+    "tool_category": "Laboratory",
     "package_icon_path": "configuration\\default_package_icon.png",
     "author": "Gavin Volpe",
     "company": "Evolve Cloud Services",
@@ -13,6 +13,37 @@
         "requirements_local_path": "tool_backends\\requirements-local.txt",
         "requirements_thirdparty_path": "tool_backends\\requirements-thirdparty.txt"
     },
-    "tools": {},
+    "tools": {
+        "AlteryxGPT": {
+            "backend": {
+                "tool_module": "ayx_plugins",
+                "tool_class_name": "AlteryxGPT"
+            },
+            "ui": {},
+            "configuration": {
+                "long_name": "AlteryxGPT",
+                "description": "ChatGPT integrated into Alteryx",
+                "version": "1.0",
+                "search_tags": [],
+                "help_url": "https://help.alteryx.com/developer-help",
+                "icon_path": "configuration\\AlteryxGPT_1_0\\icon.png",
+                "input_anchors": {
+                    "Input": {
+                        "label": "",
+                        "allow_multiple": false,
+                        "optional": true
+                    }
+                },
+                "output_anchors": {
+                    "Output": {
+                        "label": "",
+                        "allow_multiple": false,
+                        "optional": false
+                    }
+                },
+                "dcm_namespace": ""
+            }
+        }
+    },
     "tool_version": "1.0"
 }

@@ -4,10 +4,10 @@
 	<EngineSettings EngineDLL="Python" SDKVersion="10.1"/>
 	<Properties>
 		<MetaInfo>
-			<Name>gpt-categorizer</Name>
-			<RootToolName>gpt-categorizer</RootToolName>
+			<Name>Alteryx-GPT</Name>
+			<RootToolName>Alteryx-GPT</RootToolName>
 			<Description>Chat GPT in Alteryx</Description>
-			<CategoryName>Evolved</CategoryName>
+			<CategoryName>Laboratory</CategoryName>
 			<ToolVersion>1.0</ToolVersion>
 			<DcmNamespace/>
 			<Author>Gavin Volpe</Author>
