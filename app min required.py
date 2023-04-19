@@ -15,7 +15,7 @@ applications_df = pd.read_csv(
 applications = applications_df['application'].tolist()
 
 # Define your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "api key"
 model = "gpt-3.5-turbo"
 encoding = tiktoken.encoding_for_model(model)
 MAX_TOKENS = 4096
