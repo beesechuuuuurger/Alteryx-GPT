@@ -1,0 +1,18 @@
+{
+    "name": "gpt-categorizer",
+    "tool_category": "Evolved",
+    "package_icon_path": "configuration\\default_package_icon.png",
+    "author": "Gavin Volpe",
+    "company": "Evolve Cloud Services",
+    "copyright": "2023",
+    "description": "Chat GPT in Alteryx",
+    "ayx_cli_version": "1.0.4",
+    "backend_language": "python",
+    "backend_language_settings": {
+        "python_version": "3.8",
+        "requirements_local_path": "tool_backends\\requirements-local.txt",
+        "requirements_thirdparty_path": "tool_backends\\requirements-thirdparty.txt"
+    },
+    "tools": {},
+    "tool_version": "1.0"
+}
