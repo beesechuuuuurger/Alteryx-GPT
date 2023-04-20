@@ -2,25 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
-
-  <!-- Avoid caching so that the latest asset paths are always served -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-
-  <!-- Webpack will inject our app CSS bundle URLS below here automatically -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alteryx GPT Tool</title>
 </head>
 
 <body>
-  <div id="app">
-    <!-- React will render into this placeholder -->
-  </div>
-
-  <!-- Webpack will inject JS bundle URLS below here automatically -->
+  <h1>Alteryx GPT Tool</h1>
+  <form method="post" action="/process">
+    <label for="column">Column:</label>
+    <input type="text" id="column" name="column"><br><br>
+    <label for="prompt">Prompt:</label>
+    <input type="text" id="prompt" name="prompt"><br><br>
+    <!-- Add other input fields for API keys, CPU, RAM, etc. -->
+    <input type="submit" value="Submit">
+  </form>
 </body>
 
 </html>
