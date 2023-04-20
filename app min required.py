@@ -105,11 +105,9 @@ def generate_prompt(apps, memory):
     return prompt
 
 
+def get_response(prompt, model, api_key):
+    tokens = count_tokens(prompt, model)
 
-
-def get_response(prompt):
-    tokens = count_tokens(prompt)
-    
     if tokens > MAX_TOKENS:
         print("Warning: Prompt too long. Skipping.")
         return ""
@@ -117,15 +115,17 @@ def get_response(prompt):
     chat_history = []
     chat_history.append({"role": "user", "content": prompt})
 
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=chat_history,
+    response = openai.Completion.create(
+        engine=model,
+        prompt=chat_history,
         max_tokens=2500,
+        api_key=api_key,
     )
 
-    generated_text = response['choices'][0]['message']['content'].strip()
+    generated_text = response.choices[0].text.strip()
     print(generated_text)
     return generated_text
+
 
 
 
